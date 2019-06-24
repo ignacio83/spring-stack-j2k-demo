@@ -17,6 +17,7 @@ public class Person {
   public String getFullName() {
     final StringBuilder sb = new StringBuilder(firstName);
     if (lastName != null) {
+      sb.append(" ");
       sb.append(lastName);
     }
     return sb.toString();
