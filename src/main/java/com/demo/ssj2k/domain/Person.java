@@ -15,7 +15,11 @@ public class Person {
   private Integer age;
 
   public String getFullName() {
-    return String.format("%s %s", firstName, lastName);
+    final StringBuilder sb = new StringBuilder(firstName);
+    if (lastName != null) {
+      sb.append(lastName);
+    }
+    return sb.toString();
   }
 
   public void setFullName(String fullName) {
