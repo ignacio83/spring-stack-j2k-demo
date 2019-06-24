@@ -1,11 +1,10 @@
 package com.demo.ssj2k.controller;
 
 import com.demo.ssj2k.domain.Person;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor

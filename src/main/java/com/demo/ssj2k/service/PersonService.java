@@ -2,12 +2,11 @@ package com.demo.ssj2k.service;
 
 import com.demo.ssj2k.domain.Person;
 import com.demo.ssj2k.repository.PersonRepository;
+import java.util.List;
+import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
