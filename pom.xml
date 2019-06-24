@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.demo</groupId>
     <artifactId>spring-stack-j2k-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>spring-stack-j2k</name>
     <description>Spring Java Stack to Kotlin Demo</description>
 
