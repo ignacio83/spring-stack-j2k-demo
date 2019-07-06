@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.demo</groupId>
-    <artifactId>spring-stack-j2k-demo</artifactId>
+    <artifactId>spring-stack-j2k-java</artifactId>
     <version>1.0</version>
-    <name>spring-stack-j2k</name>
-    <description>Spring Java Stack to Kotlin Demo</description>
+    <name>spring-stack-j2k-java</name>
+    <description>Spring Java Stack to Kotlin Demo - Java</description>
 
     <properties>
         <java.version>1.8</java.version>
