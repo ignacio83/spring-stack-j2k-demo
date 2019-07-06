@@ -4,7 +4,7 @@ This repository contains two projects with Spring Boot Stack, one in Java and an
 ## Running
 
 ### Application
-Inside a project just type
+Inside a project just type:
 ```
 mvn spring-boot:run
 ```
