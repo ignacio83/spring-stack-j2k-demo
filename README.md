@@ -4,7 +4,10 @@ This repository contains two projects with Spring Boot Stack, one in Java and an
 ## Running
 
 ### Application
-```mvn spring-boot:run```
+Inside a project just type
+```
+mvn spring-boot:run
+```
 
 ## Request examples
 All examples use [HTTPie](https://httpie.org/)
