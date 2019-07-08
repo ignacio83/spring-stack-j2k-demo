@@ -14,7 +14,7 @@ public class PersonContract {
 
   @NotEmpty private String firstName;
 
-  private String lastName;
+  @NotEmpty private String lastName;
 
   @NotNull private Integer age;
 
