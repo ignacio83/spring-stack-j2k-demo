@@ -19,7 +19,7 @@ public class GlobalExceptionHandler {
 
   @RequiredArgsConstructor
   @Data
-  private class ErrorContract {
+  public class ErrorContract {
     private final String message;
   }
 }
