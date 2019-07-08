@@ -8,12 +8,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+
 @Service
 @RequiredArgsConstructor
 @Slf4j
 public class PersonService {
   private final PersonRepository repository;
 
+  @Transactional
   public Person create(Person person) {
     final Optional<Person> optional = repository.findById(person.getId());
     if (optional.isPresent()) {
