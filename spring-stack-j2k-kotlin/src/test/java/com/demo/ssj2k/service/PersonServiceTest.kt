@@ -17,7 +17,9 @@ class PersonServiceTest {
     @Test
     fun `when person does not exists save with success`() {
 
-        every { repository.findByIdOrNull(any()) }.returns(null)
+        every {
+            repository.findByIdOrNull(any())
+        } returns (null)
 
         val person = Person(10, "Mathew", "Smith", 37)
 
