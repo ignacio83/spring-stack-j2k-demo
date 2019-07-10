@@ -16,20 +16,13 @@ class PersonServiceTest {
 
     @Test
     fun `when person does not exists save with success`() {
-
-        every {
-            repository.findByIdOrNull(any())
-        } returns null
+        every { repository.findByIdOrNull(any()) } returns null
 
         val person = Person(10, "Mathew", "Smith", 37)
 
         val captor = slot<Person>()
 
-        every {
-            repository.save(capture(captor))
-        } answers {
-            it.invocation.args.first() as Person
-        }
+        every { repository.save(capture(captor)) } answers { it.invocation.args.first() as Person }
 
         service.create(person)
 
