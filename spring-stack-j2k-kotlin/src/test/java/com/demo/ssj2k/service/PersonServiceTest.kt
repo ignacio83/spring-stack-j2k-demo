@@ -26,7 +26,7 @@ class PersonServiceTest {
         every {
             repository.save(capture(captor))
         } answers {
-            it.invocation.args[0] as Person
+            it.invocation.args.first() as Person
         }
 
         service.create(person)
