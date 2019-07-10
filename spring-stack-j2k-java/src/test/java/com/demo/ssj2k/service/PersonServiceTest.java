@@ -28,7 +28,7 @@ public class PersonServiceTest {
   @InjectMocks private PersonService service;
 
   @Test
-  public void whenPersonNotExistsSaveWithSuccess() {
+  public void whenPersonDoesNotExistsSaveWithSuccess() {
     when(repository.findById(any())).thenReturn(Optional.empty());
 
     final Person person = new Person();
