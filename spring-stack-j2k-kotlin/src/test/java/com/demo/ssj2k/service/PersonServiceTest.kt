@@ -19,7 +19,7 @@ class PersonServiceTest {
 
         every {
             repository.findByIdOrNull(any())
-        } returns (null)
+        } returns null
 
         val person = Person(10, "Mathew", "Smith", 37)
 
