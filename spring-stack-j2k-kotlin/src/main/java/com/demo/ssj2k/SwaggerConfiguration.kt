@@ -16,17 +16,17 @@ fun swaggerBeans() = beans {
 
     bean<Docket> {
         ApiInfoBuilder()
-                .title("Demo")
-                .version("1.0")
-                .build()
-                .let {
-                    Docket(DocumentationType.SWAGGER_2)
-                            .select()
-                            .apis(RequestHandlerSelectors.any())
-                            .paths(PathSelectors.regex("/persons"))
-                            .build()
-                            .pathMapping("/")
-                            .apiInfo(it)
-                }
+            .title("Demo")
+            .version("1.0")
+            .build()
+            .let {
+                Docket(DocumentationType.SWAGGER_2)
+                    .select()
+                    .apis(RequestHandlerSelectors.any())
+                    .paths(PathSelectors.regex("/persons"))
+                    .build()
+                    .pathMapping("/")
+                    .apiInfo(it)
+            }
     }
 }

@@ -11,7 +11,7 @@ class GlobalExceptionHandler {
 
     @ExceptionHandler(DomainAlreadyExistsException::class)
     fun handleDomainAlreadyExistsException(ex: DomainAlreadyExistsException) =
-            ResponseEntity(ErrorContract(ex.message!!), HttpStatus.UNPROCESSABLE_ENTITY)
+        ResponseEntity(ErrorContract(ex.message!!), HttpStatus.UNPROCESSABLE_ENTITY)
 
     data class ErrorContract(val message: String)
 }
